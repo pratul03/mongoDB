@@ -67,6 +67,11 @@ db.Customers.insertOne( {"name": "Michael","age": 35,"spend": 1500.75})
 ```
 
 Q3. Retrieve and display all documents from the "Customers" collection.
+
+```
+db.Customers.find()
+```
+
 Q4. Update the address of a specific customer.
 Q5. Query for customers who have made purchases over a certain amount.
 Q6. Remove a customer from the "Customers" collection.
