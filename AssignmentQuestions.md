@@ -47,6 +47,11 @@ db.collection.drop()
 
 Task-6:
 Drop the "PWSKILLS" database.
+
+```
+db.dropDatabase()
+```
+
 Q2. Insert a new document representing a customer into the "Customers" collection.
 Q3. Retrieve and display all documents from the "Customers" collection.
 Q4. Update the address of a specific customer.
