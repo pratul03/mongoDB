@@ -33,6 +33,9 @@ db.Employees.insertMany([
 
 Task-4:
 • Retrieve and display all documents from the "Employees" collection.
+```
+db.Employees.find()
+```
 Task-5:
 Drop the "Employees" collection.
 Task-6:
