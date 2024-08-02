@@ -15,6 +15,22 @@ db.createCollection("Employees")
 
 Task-3:
 Insert several documents representing employees into the "Employees" collection.
+
+```
+db.Employees.insertMany([
+    {"emp_id":"EMP001",
+    "name":"John",
+    "job_profile":"Software Engineer",
+    "age":30,
+    "marriage_status":"Married"},
+    {"emp_id":"EMP002",
+    "name":"Emma",
+    "job_profile":"Product Manager",
+    "age":28,
+    "marriage_status":"Single"}
+    ]);
+```
+
 Task-4:
 • Retrieve and display all documents from the "Employees" collection.
 Task-5:
