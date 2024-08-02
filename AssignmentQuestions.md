@@ -33,11 +33,18 @@ db.Employees.insertMany([
 
 Task-4:
 • Retrieve and display all documents from the "Employees" collection.
+
 ```
 db.Employees.find()
 ```
+
 Task-5:
 Drop the "Employees" collection.
+
+```
+db.collection.drop()
+```
+
 Task-6:
 Drop the "PWSKILLS" database.
 Q2. Insert a new document representing a customer into the "Customers" collection.
