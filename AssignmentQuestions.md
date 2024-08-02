@@ -2,7 +2,7 @@ Q1. Creating and Dropping Database & Collection
 Task-1:
 • Create a new MongoDB database named "PWSKILLS".
 
-    ```bash
+    ```
     use PWSKILLS
     ```
 Task-2:
