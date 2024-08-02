@@ -5,8 +5,14 @@ Task-1:
     ```
     use PWSKILLS
     ```
+
 Task-2:
 • Create a collection named "Employees" within the "PWSKILLS" database.
+
+```
+db.createCollection("Employees")
+```
+
 Task-3:
 Insert several documents representing employees into the "Employees" collection.
 Task-4:
