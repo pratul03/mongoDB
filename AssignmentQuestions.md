@@ -73,6 +73,21 @@ db.Customers.find()
 ```
 
 Q4. Update the address of a specific customer.
+
+```
+ db.Customers.updateOne(
+    { name : "Sarah"},
+    {$set : {
+        address : {
+            city : "Baruipur",
+            district: "South 24 Parganas",
+            pincode: 743374
+            }
+        }
+    }
+)
+```
+
 Q5. Query for customers who have made purchases over a certain amount.
 Q6. Remove a customer from the "Customers" collection.
 Q7. Create a new database named "SchoolDB".
