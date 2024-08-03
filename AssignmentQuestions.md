@@ -150,11 +150,7 @@ db.Students.insertMany([
 Q9. Query for students older than a specific age or belonging to a particular grade.
 
 ```
-db.Students.find({ age : {$gt : 23}})
-```
-
-```
-db.Students.find({ grade : {$in : [1, 2, 3]}})
+db.Students.find({$or : [{ age : {$gt : 24}} , { grade : {$in : [1, 2, 3]}}]})
 ```
 
 Q10. Update the grade of a specific student in the "Students" collection.
@@ -167,15 +163,15 @@ Q11. Insert documents into the "Teachers" collection representing teachers with 
 
 ```
 db.Teachers.insertMany([
-    { 
-        name: "John", 
-        subject: "Math", 
-        experience: 10 
-    }, 
-    { 
-        name: "Sara", 
-        subject: "English", 
-        experience: 8 
+    {
+        name: "John",
+        subject: "Math",
+        experience: 10
+    },
+    {
+        name: "Sara",
+        subject: "English",
+        experience: 8
     }
 ]);
 
@@ -184,10 +180,7 @@ db.Teachers.insertMany([
 Q12. Query for teachers specializing in a specific subject or with more than a certain amount of experience.
 
 ```
-db.Teachers.find({ subject : { $in : [ "Math" , "English", "Science" ] }})
-```
-```
-db.Teachers.find({ experience : { $gt : 9}})
+ db.Teachers.find({$or : [ { subject : "History"}, {experience : { $gte :9}}]})
 ```
 
 Q13. Update the experience of a specific teacher in the "Teachers" collection.
