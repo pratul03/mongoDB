@@ -93,18 +93,23 @@ Q4. Update the address of a specific customer.
 ```
 
 Q5. Query for customers who have made purchases over a certain amount. ( find customers who has purchased over 2000 and below 2000 rupees)
+
 ```
 db.Customers.find({ spend : {$gt : 2000}})
 ```
+
 ```
 db.Customers.find({ spend : {$lt : 2000}})
 ```
+
 ```
 db.Customers.find({ spend : {$gte : 2000}})
 ```
+
 ```
 db.Customers.find({ spend : {$lte : 2000}})
 ```
+
 ```
 db.Customers.find({ spend : {$gte : 2000 ,$lte : 3000}})
 ```
@@ -114,6 +119,11 @@ db.Customers.find({ spend : {$in : [2000 , 2500]}})
 ```
 
 Q6. Remove a customer from the "Customers" collection.
+
+```
+db.Customers.deleteOne({ name : "Michael" })
+```
+
 Q7. Create a new database named "SchoolDB".
 Q8. Insert documents into the "Students" collection with fields like name, age, and grade.
 Q9. Query for students older than a specific age or belonging to a particular grade.
