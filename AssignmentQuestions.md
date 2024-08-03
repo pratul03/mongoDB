@@ -92,7 +92,7 @@ Q4. Update the address of a specific customer.
 )
 ```
 
-Q5. Query for customers who have made purchases over a certain amount.
+Q5. Query for customers who have made purchases over a certain amount. ( find customers who has purchased over 2000 and below 2000 rupees)
 ```
 db.Customers.find({ spend : {&gt : 2000}})
 ```
