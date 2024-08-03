@@ -125,7 +125,28 @@ db.Customers.deleteOne({ name : "Michael" })
 ```
 
 Q7. Create a new database named "SchoolDB".
+
+```
+use SchoolDB
+```
+
 Q8. Insert documents into the "Students" collection with fields like name, age, and grade.
+
+```
+db.Students.insertMany([
+    {
+        name: "Alice",
+        age: 20,
+        grade: 9
+    },
+    {
+        name: "Bob",
+        age: 21,
+        grade: 8
+    }
+]);
+```
+
 Q9. Query for students older than a specific age or belonging to a particular grade.
 Q10. Update the grade of a specific student in the "Students" collection.
 Q11. Insert documents into the "Teachers" collection representing teachers with fields like name, subject, and
