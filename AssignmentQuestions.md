@@ -148,6 +148,14 @@ db.Students.insertMany([
 ```
 
 Q9. Query for students older than a specific age or belonging to a particular grade.
+
+```
+db.Students.find({ age : {$gt : 23}})
+```
+
+```
+db.Students.find({ grade : {$in : [1, 2, 3]}})
+```
 Q10. Update the grade of a specific student in the "Students" collection.
 Q11. Insert documents into the "Teachers" collection representing teachers with fields like name, subject, and
 experience.
