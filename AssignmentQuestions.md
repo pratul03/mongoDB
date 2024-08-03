@@ -163,7 +163,35 @@ Q10. Update the grade of a specific student in the "Students" collection.
 db.Students.updateOne({ name : "Bob" } , { $set : { grade : 2}})
 ```
 
-Q11. Insert documents into the "Teachers" collection representing teachers with fields like name, subject, and
-experience.
+Q11. Insert documents into the "Teachers" collection representing teachers with fields like name, subject, and experience.
+
+```
+db.Teachers.insertMany([
+    { 
+        name: "John", 
+        subject: "Math", 
+        experience: 10 
+    }, 
+    { 
+        name: "Sara", 
+        subject: "English", 
+        experience: 8 
+    }
+]);
+
+```
+
 Q12. Query for teachers specializing in a specific subject or with more than a certain amount of experience.
+
+```
+db.Teachers.find({ subject : { $in : [ "Math" , "English", "Science" ] }})
+```
+```
+db.Teachers.find({ experience : { $gt : 9}})
+```
+
 Q13. Update the experience of a specific teacher in the "Teachers" collection.
+
+```
+db.Teachers.updateOne({ name : "Anna" }, { $set : { experience : 9}})
+```
