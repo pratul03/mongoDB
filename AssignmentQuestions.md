@@ -93,6 +93,19 @@ Q4. Update the address of a specific customer.
 ```
 
 Q5. Query for customers who have made purchases over a certain amount.
+```
+db.Customers.find({ spend : {&gt : 2000}})
+```
+```
+db.Customers.find({ spend : {&lt : 2000}})
+```
+```
+db.Customers.find({ spend : {&gte : 2000}})
+```
+```
+db.Customers.find({ spend : {&lte : 2000}})
+```
+
 Q6. Remove a customer from the "Customers" collection.
 Q7. Create a new database named "SchoolDB".
 Q8. Insert documents into the "Students" collection with fields like name, age, and grade.
