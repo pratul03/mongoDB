@@ -156,7 +156,13 @@ db.Students.find({ age : {$gt : 23}})
 ```
 db.Students.find({ grade : {$in : [1, 2, 3]}})
 ```
+
 Q10. Update the grade of a specific student in the "Students" collection.
+
+```
+db.Students.updateOne({ name : "Bob" } , { $set : { grade : 2}})
+```
+
 Q11. Insert documents into the "Teachers" collection representing teachers with fields like name, subject, and
 experience.
 Q12. Query for teachers specializing in a specific subject or with more than a certain amount of experience.
